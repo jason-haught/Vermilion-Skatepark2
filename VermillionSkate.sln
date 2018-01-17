@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VermillionSkate2", "..\VermillionSkate2\VermillionSkate2.csproj", "{921DB759-2D24-4DF4-B2C9-249AAC6C0888}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VermillionSkate2", ".\VermillionSkate2\VermillionSkate2.csproj", "{921DB759-2D24-4DF4-B2C9-249AAC6C0888}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
