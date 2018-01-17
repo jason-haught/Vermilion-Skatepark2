@@ -29,7 +29,7 @@ namespace VermillionSkate2
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             //["appConfig.ApplicationTitle"];
-            //var applicationTitle = Configuration.GetSection("App").Get<AppSettings>().ApplicationTitle;
+            //var applicationTitle = Configuration.GetSection("App").Get<AppSettings>().ApplicationTitle; 
             AppSettings.ApplicationTitle = Configuration["App:Title"];
             AppSettings.ApplicationFooter = Configuration["App:Footer"];
             AppSettings.ContactInfo = new Contact()

@@ -7,7 +7,7 @@ namespace VermillionSkate2.Models
 {
     public static class AppSettings
     {
-        public static string ApplicationTitle { get; set; }
+        public static string ApplicationTitle { get; set; } 
 
         public static string ApplicationFooter { get; set; }
 

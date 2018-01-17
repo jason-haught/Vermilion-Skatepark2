@@ -14,7 +14,7 @@ namespace VermillionSkate2.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["Title"] = AppSettings.HomeInfo.Title;
+            ViewData["Title"] = AppSettings.HomeInfo.Title; 
             ViewData["Message"] = AppSettings.HomeInfo.Message;
             return View();
         }
