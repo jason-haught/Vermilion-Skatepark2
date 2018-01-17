@@ -16,7 +16,7 @@ namespace VermillionSkate2
     {
         public static void Main(string[] args)
         {
-
+            //Adding files to config
             //var builder = new ConfigurationBuilder()
             //.SetBasePath(Directory.GetCurrentDirectory())
             //.AddJsonFile("appsettings.json");
