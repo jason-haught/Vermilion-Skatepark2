@@ -14,23 +14,23 @@ namespace VermillionSkate2.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["Title"] = AppSettings.HomeInfo.Title; 
-            ViewData["Message"] = AppSettings.HomeInfo.Message;
+            ViewData["Title"] = AppSettings.Instance.HomeInfo.Title; 
+            ViewData["Message"] = AppSettings.Instance.HomeInfo.Message;
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Title"] = AppSettings.AboutInfo.Title;
-            ViewData["Message"] = AppSettings.AboutInfo.Message;
+            ViewData["Title"] = AppSettings.Instance.AboutInfo.Title;
+            ViewData["Message"] = AppSettings.Instance.AboutInfo.Message;
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Title"] = AppSettings.ContactInfo.Title;
-            ViewData["Message"] = AppSettings.ContactInfo.Message; 
+            ViewData["Title"] = AppSettings.Instance.ContactInfo.Title;
+            ViewData["Message"] = AppSettings.Instance.ContactInfo.Message; 
 
             return View();
         }
@@ -49,8 +49,8 @@ namespace VermillionSkate2.Controllers
             var result = filterContext.Result as ViewResult;
             if (result != null)
             {
-                result.ViewData["ApplicationTitle"] = AppSettings.ApplicationTitle;
-                result.ViewData["ApplicationFooter"] = AppSettings.ApplicationFooter;
+                result.ViewData["ApplicationTitle"] = AppSettings.Instance.ApplicationTitle;
+                result.ViewData["ApplicationFooter"] = AppSettings.Instance.ApplicationFooter;
             }
         }
     }

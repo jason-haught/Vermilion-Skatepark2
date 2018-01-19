@@ -5,17 +5,40 @@ using System.Threading.Tasks;
 
 namespace VermillionSkate2.Models
 {
-    public static class AppSettings
+    public enum ConnectionStringNames : long
     {
-        public static string ApplicationTitle { get; set; } 
+        PagesDataContextSQL = 0,
+        PagesDataContextSQLLite = 1
+    }
 
-        public static string ApplicationFooter { get; set; }
+    public sealed class AppSettings
+    {
+        private static readonly Lazy<AppSettings> _lazyInstance =
+            new Lazy<AppSettings>(() => new AppSettings());
 
-        public static Contact ContactInfo { get; set; }
+        public static AppSettings Instance
+        {
+            get
+            {
+                return _lazyInstance.Value;
+            }
+        }
 
-        public static Home HomeInfo { get; set; }
+        public string ApplicationTitle { get; set; }
 
-        public static About AboutInfo { get; set; }
+        public string ApplicationFooter { get; set; }
+
+        public Contact ContactInfo { get; set; }
+
+        public Home HomeInfo { get; set; }
+
+        public About AboutInfo { get; set; }
+
+        public Dictionary<ConnectionStringNames, string> ConnectionStrings { get; set; }
+
+        private AppSettings()
+        {
+        }
     }
 
     public class Contact

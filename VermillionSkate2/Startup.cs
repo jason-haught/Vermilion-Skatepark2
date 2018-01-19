@@ -23,6 +23,8 @@ namespace VermillionSkate2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            //services.AddDbContext<PagesDataModel>(options => options.use)
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,25 +32,33 @@ namespace VermillionSkate2
         {
             //["appConfig.ApplicationTitle"];
             //var applicationTitle = Configuration.GetSection("App").Get<AppSettings>().ApplicationTitle; 
-            AppSettings.ApplicationTitle = Configuration["App:Title"];
-            AppSettings.ApplicationFooter = Configuration["App:Footer"];
-            AppSettings.ContactInfo = new Contact()
+            AppSettings.Instance.ApplicationTitle = Configuration["App:Title"];
+            AppSettings.Instance.ApplicationFooter = Configuration["App:Footer"];
+            AppSettings.Instance.ContactInfo = new Contact()
             {
                 Title = Configuration["App:Contact:Title"],
                 Message = Configuration["App:Contact:Message"]
             };
 
-            AppSettings.HomeInfo = new Home()
+            AppSettings.Instance.HomeInfo = new Home()
             {
                 Title = Configuration["App:Home:Title"],
                 Message = Configuration["App:Home:Message"]
             };
 
-            AppSettings.AboutInfo = new About()
+            AppSettings.Instance.AboutInfo = new About()
             {
                 Title = Configuration["App:About:Title"],
                 Message = Configuration["App:About:Message"]
             };
+
+            AppSettings.Instance.ConnectionStrings = new Dictionary<ConnectionStringNames, string>();
+
+            AppSettings.Instance.ConnectionStrings
+                .Add(ConnectionStringNames.PagesDataContextSQL, Configuration["ConnectionStrings:PagesDataContextSQL"]);
+
+            AppSettings.Instance.ConnectionStrings
+                .Add(ConnectionStringNames.PagesDataContextSQLLite, Configuration["ConnectionStrings:PagesDataContextSQLLite"]);
 
             if (env.IsDevelopment())
             {
