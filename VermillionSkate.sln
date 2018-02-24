@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VermillionSkate2", ".\VermillionSkate2\VermillionSkate2.csproj", "{921DB759-2D24-4DF4-B2C9-249AAC6C0888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VermillionSkate2", "VermillionSkate2\VermillionSkate2.csproj", "{921DB759-2D24-4DF4-B2C9-249AAC6C0888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VermillionSkatepark", "WebSiteRazor\VermillionSkatepark.csproj", "{B37A9BF5-FDFC-40CE-A202-8B8694447C07}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HtmlOnly", "HtmlOnly\", "{5CFF5C69-5ACF-4C32-A961-80EBA6A26396}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61906"
+		Debug.AspNetCompiler.PhysicalPath = "HtmlOnly\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61906\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61906"
+		Release.AspNetCompiler.PhysicalPath = "HtmlOnly\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61906\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61906"
+		SlnRelativePath = "HtmlOnly\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +39,14 @@ Global
 		{921DB759-2D24-4DF4-B2C9-249AAC6C0888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921DB759-2D24-4DF4-B2C9-249AAC6C0888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921DB759-2D24-4DF4-B2C9-249AAC6C0888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37A9BF5-FDFC-40CE-A202-8B8694447C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37A9BF5-FDFC-40CE-A202-8B8694447C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37A9BF5-FDFC-40CE-A202-8B8694447C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37A9BF5-FDFC-40CE-A202-8B8694447C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CFF5C69-5ACF-4C32-A961-80EBA6A26396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFF5C69-5ACF-4C32-A961-80EBA6A26396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFF5C69-5ACF-4C32-A961-80EBA6A26396}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFF5C69-5ACF-4C32-A961-80EBA6A26396}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
