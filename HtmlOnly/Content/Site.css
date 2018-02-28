@@ -21,6 +21,7 @@ textarea {
     width: 100%;
 }
 
+/****************HEADER*****************/
 /*Top Bar (login, search etc.)
 ------------------------------------*/
 .header .topbar {
@@ -152,7 +153,7 @@ textarea {
 
 /*Navbar Toggle*/
 .header .navbar-default .navbar-toggle {
-    border-color: #5fb611;
+    border-color: #020344; /* Lime Green: #5fb611   */
 }
 
     .header .navbar-default .navbar-toggle .fa {
@@ -163,12 +164,12 @@ textarea {
     .header .navbar-toggle,
     .header .navbar-default .navbar-toggle:hover,
     .header .navbar-default .navbar-toggle:focus {
-        background: #72c02c;
+        background: #0d6e83; /* #72c02c; */
         padding: 6px 10px 2px;
     }
 
         .header .navbar-toggle:hover {
-            background: #5fb611 !important;
+            background: #020344 !important; /* Lime Green: #5fb611   */
         }
 
 /*Navbar Collapse*/
@@ -178,14 +179,14 @@ textarea {
 
 /*Navbar Menu*/
 .header .navbar-default .navbar-nav > li > a {
-    color: #687074;
+    color: #0d6e83;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .header .navbar-default .navbar-nav > .active > a {
-    color: #72c02c;
+    color: #0d6e83; /* #72c02c; */
 }
 
 @media (min-width: 992px) {
@@ -317,13 +318,13 @@ textarea {
     }
 
     .header .navbar-default .navbar-nav > li > a:hover {
-        color: #72c02c;
+        color: #0d6e83; /* #72c02c; */
     }
 
     .header .navbar-default .navbar-nav > .active > a,
     .header .navbar-default .navbar-nav > .active > a:hover,
     .header .navbar-default .navbar-nav > .active > a:focus {
-        background: #72c02c;
+        background: #0d6e83; /* #72c02c; */
         color: #fff !important;
     }
 
@@ -371,7 +372,7 @@ textarea {
             .header .navbar-default .navbar-nav > .active > a {
                 bottom: -2px;
                 position: relative;
-                border-bottom: solid 2px #72c02c;
+                border-bottom: solid 2px #0d6e83; /* #72c02c; */
             }
 
                 .header .navbar-default .navbar-nav > li > a,
@@ -386,11 +387,11 @@ textarea {
     .header .navbar-default .navbar-nav > .open > a,
     .header .navbar-default .navbar-nav > .open > a:hover,
     .header .navbar-default .navbar-nav > .open > a:focus {
-        color: #72c02c;
+        color: #0d6e83; /* #72c02c; */
     }
 
     .header .navbar-default .navbar-nav > li:hover > a {
-        color: #72c02c;
+        color: #0d6e83; /* #72c02c; */
     }
 
     /*Dropdown Menu*/
@@ -400,12 +401,12 @@ textarea {
         min-width: 200px;
         border-radius: 0;
         z-index: 9999 !important;
-        border-top: solid 2px #72c02c;
-        border-bottom: solid 2px #687074;
+        border-top: solid 2px #0d6e83; /* #72c02c; */
+        border-bottom: solid 2px #0d6e83;
     }
 
         .header .dropdown-menu li a {
-            color: #687074;
+            color: #0d6e83;
             font-size: 13px;
             font-weight: 400;
             padding: 6px 15px;
@@ -416,7 +417,7 @@ textarea {
         .header .dropdown-menu li > a:hover {
             color: #fff;
             filter: none !important;
-            background: #687074 !important;
+            background: #0d6e83 !important;
             -webkit-transition: all 0.1s ease-in-out;
             -moz-transition: all 0.1s ease-in-out;
             -o-transition: all 0.1s ease-in-out;
@@ -542,9 +543,9 @@ textarea {
 }
 
 .header .navbar .nav > li > .search:hover {
-    color: #72c02c;
+    color: #0d6e83; /* #72c02c; */
     background: #f7f7f7;
-    border-bottom-color: #72c02c;
+    border-bottom-color: #0d6e83; /* #72c02c; */
 }
 
 .header .navbar .search-open {
@@ -591,7 +592,7 @@ textarea {
     }
 
         .header .navbar .nav > li > .search:hover {
-            background: #5fb611;
+            background: #020344; /* Lime Green: #5fb611   */
             color: #fff !important;
         }
 
@@ -899,7 +900,7 @@ textarea {
     }
 
     .header .mega-menu .equal-height-list li a {
-        color: #687074;
+        color: #0d6e83;
         display: block;
         font-size: 13px;
         font-weight: 400;
@@ -919,6 +920,77 @@ textarea {
     .header .mega-menu .equal-height-list li a:hover {
         color: #333;
         text-decoration: none;
+    }
+}
+
+/**********FOOTER*************/
+/*Footer-v1
+------------------------------------*/
+.footer-v1 .footer {
+    padding: 40px 0;
+    background: #272727;
+}
+
+    .footer-v1 .footer p {
+        color: #eee;
+    }
+
+    .footer-v1 .footer h2 {
+        color: #eee;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+/*Link List*/
+.footer-v1 .link-list li {
+    border-top: solid 1px #353535;
+}
+
+.footer-v1 address,
+.footer-v1 .link-list a,
+.footer-v1 .link-list i {
+    color: #eee;
+}
+
+.footer-v1 address {
+    line-height: 23px;
+}
+
+/*Dotted Map*/
+.footer-v1 .footer .map-img {
+    background: url(../../img/map-img.png) 5px 60px no-repeat;
+}
+
+/*Copyright*/
+.footer-v1 .copyright {
+    background: #222;
+    border-top: none;
+    padding: 10px 0 5px;
+}
+
+    .footer-v1 .copyright p {
+        color: #eee;
+        margin-top: 14px;
+    }
+
+    .footer-v1 .copyright a {
+        margin: 0 2px;
+    }
+
+.footer-v1 .footer-socials {
+    margin-top: 12px;
+    text-align: right;
+}
+
+    .footer-v1 .footer-socials li a {
+        color: #777;
+        font-size: 16px;
+    }
+
+@media (max-width: 991px) {
+    .footer-v1 .copyright,
+    .footer-v1 .footer-socials {
+        text-align: left;
     }
 }
 

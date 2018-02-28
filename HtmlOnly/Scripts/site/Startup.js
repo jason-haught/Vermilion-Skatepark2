@@ -9,7 +9,8 @@ function loadHTML(url, id) {
     req.open('GET', url);
     req.send();
     req.onload = () => {
-        $id(id).innerHTML = req.responseText;
+        //$id(id).innerHTML = req.responseText;
+        $("#" + id).html(req.responseText); //allow scripts
     };
 }
 

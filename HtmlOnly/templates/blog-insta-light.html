@@ -1,0 +1,32 @@
+﻿<div class="wrapper">
+
+    <div class="content">
+
+        <div class="wrapper">
+
+            <h1>Recent Instagram Posts from <a href="//www.instagram.com/vermillionSkate" target="_blank">@vermillionSkate</a></h1>
+
+            <ul class="il-insta"></ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $('.il-insta').instagramLite({
+        accessToken: '1730464.199554e.e561d1b801d74e35a1453110a44a09e8',
+        urls: true,
+        limit: 8,
+        captions: true,
+        likes: true,
+        comments_count: true,
+        success: function () {
+            console.log('The request was successful!');
+        },
+        error: function () {
+            console.log('There was an error with your request.');
+        }
+    });
+</script>
