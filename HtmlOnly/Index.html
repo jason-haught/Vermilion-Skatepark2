@@ -9,7 +9,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
 
-    <title>Vermillion Ohio Skatepark</title>
+    <title>Vermilion Ohio Skatepark</title>
 
     <link rel="shortcut icon" href="./favicon.ico">
     <link href="./Content/Site.css" rel="stylesheet" type="text/css">
@@ -19,12 +19,25 @@
     <script src="./Scripts/modernizr-2.6.2.js"></script>
     <script src="./Scripts/bootstrap.min.js"></script>
     <script src="./Scripts/instagramLite/instagramLite.js"></script>
+
+    <!--<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12"></script>-->
 </head>
 <body>
     <noscript>This site requires JavaScript to display properly! Please enable it.</noscript>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="wrapper">
         <!--=== Header ===-->
         <div class="header">
@@ -43,7 +56,8 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#blog">Blog</a></li>
+                            <!--<li><a href="#blog">Updates</a></li>-->
+                            <li><a href="#facebook">Updates</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,6 +97,21 @@
                                     <p>
                                         To be determined. Stay tuned!
                                     </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <div class="headline"><h2>Links</h2></div>
+                            <ul class="list-unstyled who margin-bottom-30">
+                                <li>
+                                    <div class="fb-like"
+    data-href="https://www.facebook.com/Vermilion-Ohio-Skatepark-166244700750527"
+    data-layout="button"
+    data-action="like"
+    data-size="small"
+    data-show-faces="true"
+    data-share="true"></div>
+                                    <img style="margin-left:5px" width="20" height="20" title="Vermilion Skatepark Instagram" src="Images/instagram.png" />
                                 </li>
                             </ul>
                         </div>
